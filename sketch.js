@@ -87,7 +87,9 @@ function draw() {
     spawnObstacles();
     
     //End the game when trex is touching the obstacle
-    if(trex.x- obstaclesGroup.x<obstaclesGroup.width/2+trex.width/2&&obstaclesGroup.x-trex.x<obstaclesGroup.width/2+trex.width/2){
+    if(trex.isTouching(obstaclesGroup);
+        //trex.x-obstaclesGroup.x<(trex.width+obstaclesGroup.width)/2
+    ){
       gameState = END;
     }
     

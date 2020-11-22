@@ -79,6 +79,7 @@ function draw() {
     trex.collide(invisibleGround);
     //move the ground
     ground.velocityX = -(6 + 3*count/100);
+      camera.velocityX = camera.velocityX+1;
     
     //spawn the clouds
     spawnClouds();
